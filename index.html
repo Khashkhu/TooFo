@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> To Do List</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="menu-container">
-            <h1>
-                MENU
-            </h1>
+        <div class="menu-container" id="menu-container">
+            <div class="title">
+                <div>Menu</div>
+                <button class="fa fa-bars" onclick="document.getElementById('menu-container').style.display = 'none'">
+                </button>
+            </div>
         </div>
 
         <div class="task-container">
-            <h1>
-                TASKs
-            </h1>
+            <div class="title-task">Today</div>
         </div>
 
-        <div class="new-task-container">
-            <h1>
-                NEW Task
-            </h1>
+        <div class="new-task-container" id="new-task-container">
+            <div class="title">
+                <div>Task:</div>
+                <div class="fa fa-sign-out" onclick="document.getElementById('new-task-container').style.display = 'none'">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
         </div>
         <div>
             
